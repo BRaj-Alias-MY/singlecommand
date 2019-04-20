@@ -1,0 +1,17 @@
+{
+  "name": "grnapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd grn-ui && npm start",
+    "server": "cd grn-services && npm start",
+    "start": "concurrently - kill-others \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
